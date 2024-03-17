@@ -1,0 +1,299 @@
+  /* Start Global Rules */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+  }
+  ul {
+    list-style: none;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* End Global Rules */
+  /*Start Sidebar*/
+  .sidebar{
+    width: 250px;
+    height: 900px;
+    background-color: #121212;
+
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 20px;
+  }
+  .addres,
+  .home,
+  .trash,
+  .storage .cloud{
+    display: flex;
+    gap: 10px;
+  }
+  .addres h1{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #57ACDC;
+  }
+  .folder button{
+    width: 128px;
+    height: 44px;
+    border-radius:50px; 
+    background-color:#57ACDC;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffff;
+    border: 0px;
+    cursor: pointer;
+  }
+  .folder button img{
+    position: relative;
+    left: -7px;
+    top: 3px;
+  }
+  .home p,
+  .trash p,
+  .cloud p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #939393;
+  }
+  .home p{
+    color: #57ACDC !important;
+  }
+  .home p:hover,
+  .trash p:hover,
+  .cloud p:hover{
+    color: #57ACDC;
+  }
+  .home::before{
+    content: "";
+    width: 7px;
+    height: 32px;
+    background-color: #57ACDC;
+    position: absolute;
+    left: 0px;
+    top: 188px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px
+  }
+  .storage{
+    margin-top: 15px;
+    border-top: 1px solid gray;
+  }
+  .cloud{
+    margin-top: 50px;
+  }
+  .group{
+    margin-top: 20px;
+  }
+  /*End Sidebar*/
+  /*Start Navbar*/
+  .right{
+    background-color: #1E1E1E;
+    width: 100%;
+  }
+  .content2{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .search input{
+    width: 627px;
+    height: 48px;
+    border-radius: 10px;   
+    border: 1px solid #939393; 
+    padding-left: 70px;
+    background-color: #1e1e1e;
+    margin-top: 40px;
+    color: #939393;
+  }
+  .search .one{
+    position: absolute;
+    left: 252px;
+    top: 50px;
+  }
+  .search .two{
+    position: relative;
+    right: -582px;
+    top: -40px;
+  }
+  .btn-drag{
+    width: 351px;
+    height: 48px;
+    border-radius: 10px;   
+    border: 1px dashed #939393;   
+    overflow: hidden;
+    background-color: #1e1e1e;
+    margin-top: 40px;
+    padding-top: 14px;
+  }
+  .btn-drag input[type="file"]{
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    transform: scale(5);
+    opacity: 0;
+  }
+  .btn-drag img{
+    position: absolute;
+    right: 420px;
+    top: 48px;
+  }
+  .btn-drag p{
+    color: #939393;
+  }
+  .btn-drag p a{
+    color: #57ACDC;
+  }
+  .comment{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 25px;
+  }
+  .comment p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #FAFAFA;
+  }
+  /*End Navbar*/
+  /*Start Toolbar*/
+  .tools{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-top: 1px solid #939393;
+  }
+  .tool{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tools .left p,
+  .tools .tool p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #939393;
+    padding-top: 14px;
+    
+  }
+  .tools .tool p{
+    border-right: 1px solid #939393;
+    padding-right: 12px;
+  }
+  .tools .tool .tool1{
+    border-right: 1px solid #939393;
+    padding-right: 12px;
+   
+  }
+  /*End Toolbar*/
+  /*Start Table*/
+  .table table{
+    width: 100%;
+    padding-left: 20px;
+    border-spacing: 0px;
+    margin-top: -20px;
+  }
+  .table table thead,
+  .table table tbody{
+    width: 1110px;
+    height: 52px;
+    border-radius: 10 ;  
+    color: #FAFAFA;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+    border: 1px solid #FAFAFA4D;
+  }
+  .table table thead{
+    background-color:#171717;
+  }
+  .table input[type="checkbox"]{
+    margin:0px 15px;
+    appearance:none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;   
+    border: 1px solid white;   
+    background-color:#1E1E1E;
+    color: #1E1E1E;
+  }
+  .table .folder{
+    width: 20px;
+    height: 20px;
+    margin:8px 5px 0px 0px;
+  }
+  .table .rec{
+    width: 1082px;
+    height: 58px;
+    border-radius: 10px;   
+    background-color:  #8B8B8B0F;
+
+  }
+  .table .fol{
+    width: 1082px;
+    height: 58px;
+  }
+  .table .rec::after,
+  .table #cr::after{
+    
+    content: "";
+    display: block;
+    position: relative;
+    width: 8px;
+    top: 26px;
+    left: -1038px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #57ACDC
+  }
+  @media (max-width:978px) {
+    .table .rec::after,
+    .table #cr::after{
+      left: -872px;
+    }
+  }
+  /*End Table*/
